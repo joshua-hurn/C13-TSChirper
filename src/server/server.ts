@@ -4,9 +4,9 @@ import apiRouter from "./routes";
 
 const app = express();
 
-// parse JSON so I can use in chirps.js
+// parse JSON so I can use in routes
 app.use(express.json());
-// parse form data so I can use in chirps.js
+// parse form data so I can use in routes
 app.use(express.urlencoded({ extended: true }));
 
 app.use("/api", apiRouter);
